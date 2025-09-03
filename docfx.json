@@ -1,18 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
-  "metadata": [
-    {
-      "src": [
-        {
-          "src": "../src",
-          "files": [
-            "**/*.csproj"
-          ]
-        }
-      ],
-      "dest": "api"
-    }
-  ],
   "build": {
     "content": [
       {
@@ -20,14 +7,19 @@
           "**/*.{md,yml}"
         ],
         "exclude": [
-          "_site/**"
+          "_site/**",
+          "images/README.md",
+          "docs/**"
         ]
       }
     ],
     "resource": [
       {
         "files": [
-          "images/**"
+          "images/**",
+          "styles/**",
+          "public/**",
+          "main.css"
         ]
       }
     ],
@@ -37,10 +29,17 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "",
-      "_appTitle": "",
+      "_appName": "4c.gg",
+      "_appTitle": "4c.gg - Personal Blog & Projects",
+      "_appFooter": "© 2024 4c.gg",
+      "_disableContribution": true,
+      "_disableNextArticle": true,
       "_enableSearch": true,
-      "pdf": true
+      "_gitContribute": {
+        "repo": "https://github.com/yourusername/4c.gg",
+        "branch": "main"
+      },
+      "pdf": false
     }
   }
 }

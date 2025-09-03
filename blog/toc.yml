@@ -1,0 +1,14 @@
+- name: Recent Posts
+  href: index.md
+- name: 2024 Posts
+  href: 2024/
+- name: Categories
+  items:
+    - name: Tutorials
+      href: categories/tutorials/
+    - name: Development
+      href: categories/development/
+    - name: Technology
+      href: categories/technology/
+    - name: Personal
+      href: categories/personal/

@@ -1,0 +1,14 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <p>&copy; {{#_appFooter}}{{_appFooter}}{{/_appFooter}}{{^_appFooter}}2024 4c.gg{{/_appFooter}}</p>
+          <p class="text-muted">Built with passion for sharing knowledge and code</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

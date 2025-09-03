@@ -1,0 +1,347 @@
+/* 4c.gg Custom Dark Theme - Override DocFX default styles */
+
+/* CSS Variables for consistent theming */
+:root {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --text-primary: #f0f6fc;
+  --text-secondary: #8b949e;
+  --text-muted: #6e7681;
+  --accent-primary: #58a6ff;
+  --accent-hover: #79c0ff;
+  --border-primary: #30363d;
+  --border-secondary: #21262d;
+  --success: #3fb950;
+  --warning: #d29922;
+  --error: #f85149;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary) !important;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.1rem; }
+
+p, li, td {
+  color: var(--text-secondary) !important;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a, a:link {
+  color: var(--accent-primary) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--accent-hover) !important;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--accent-primary) !important;
+}
+
+/* Navigation Bar */
+.navbar, .subnav {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-primary) !important;
+  border-top: none !important;
+}
+
+.navbar-brand, .navbar-brand:hover {
+  color: var(--text-primary) !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.navbar-nav .nav-link, .subnav .nav-link {
+  color: var(--text-secondary) !important;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover, .subnav .nav-link:hover {
+  color: var(--accent-primary) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--border-primary);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f0f6fc' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Main content area */
+.container-fluid, .container, .row, .col-12, .col-md-10 {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Sidebar */
+.sidenav, .sidefilter, .toc {
+  background-color: var(--bg-secondary) !important;
+  border-right: 1px solid var(--border-primary) !important;
+  border: none;
+}
+
+.sidenav .nav-link, .toc .nav > li > a {
+  color: var(--text-secondary) !important;
+  background-color: transparent !important;
+  border-radius: 6px;
+  margin: 2px 0;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.sidenav .nav-link:hover, .toc .nav > li > a:hover {
+  color: var(--accent-primary) !important;
+  background-color: var(--bg-tertiary) !important;
+}
+
+.sidenav .nav-link.active, .toc .nav > li.active > a {
+  color: var(--accent-primary) !important;
+  background-color: var(--bg-tertiary) !important;
+}
+
+/* Article content */
+article, .content, .article {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-secondary) !important;
+  max-width: none;
+  padding: 2rem;
+}
+
+/* Code blocks and inline code */
+pre, code, .hljs {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-primary) !important;
+  border-radius: 6px;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.875em;
+}
+
+pre code {
+  background-color: transparent !important;
+  padding: 0;
+  border: none;
+}
+
+/* Tables */
+table {
+  background-color: var(--bg-secondary) !important;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid var(--border-primary) !important;
+}
+
+th, td {
+  border: 1px solid var(--border-primary) !important;
+  padding: 0.75rem;
+  text-align: left;
+  background-color: var(--bg-secondary) !important;
+}
+
+th {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  font-weight: 600;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent-primary) !important;
+  background-color: var(--bg-secondary) !important;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--text-secondary) !important;
+}
+
+/* Footer */
+footer, .footer {
+  background-color: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-primary) !important;
+  color: var(--text-muted) !important;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+  background-color: transparent !important;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item, .breadcrumb-item a {
+  color: var(--text-muted) !important;
+}
+
+/* Hide DocFX branding elements */
+.contribution-panel,
+.improve-docs,
+.feedback,
+.contribute-link,
+.edit-link,
+.powered-by,
+.docfx-navbar-brand,
+.docfx-footer,
+footer .docfx-link,
+.footer .contribution-panel,
+.footer .feedback,
+.footer .improve-docs {
+  display: none !important;
+}
+
+/* Search */
+#search-results {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.search-list .search-item {
+  background-color: var(--bg-secondary) !important;
+  border-bottom: 1px solid var(--border-primary) !important;
+  color: var(--text-secondary) !important;
+}
+
+.search-list .search-item:hover {
+  background-color: var(--bg-tertiary) !important;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background-color: var(--accent-primary) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--bg-primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+}
+
+/* Alert messages */
+.alert {
+  background-color: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-primary) !important;
+  color: var(--text-secondary) !important;
+}
+
+.alert-info {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--accent-primary) !important;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  article, .content {
+    padding: 1rem;
+  }
+  
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.375rem; }
+  h3 { font-size: 1.125rem; }
+}
+
+/* Landing page specific styles */
+.hero-section {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  padding: 4rem 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary) !important;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary) !important;
+  margin-bottom: 2rem;
+}
+
+/* Force dark theme on all elements */
+.container, .container-fluid, .row, [class*="col-"] {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Additional overrides for stubborn elements */
+body * {
+  border-color: var(--border-primary) !important;
+}
+
+/* Ensure form elements are styled */
+input, textarea, select {
+  background-color: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Fix any remaining light backgrounds */
+.bg-light, .bg-white, .table-light {
+  background-color: var(--bg-secondary) !important;
+}

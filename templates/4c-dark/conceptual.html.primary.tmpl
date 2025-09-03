@@ -1,0 +1,42 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+{{>partials/class.header}}
+{{#_enableSearch}}<div class="hide-when-search">{{/_enableSearch}}
+{{^_disableNavbar}}
+{{>partials/navbar}}
+{{/_disableNavbar}}
+{{#_enableSearch}}</div>{{/_enableSearch}}
+
+<div role="main" class="container-fluid hide-when-search">
+  {{^_disableBreadcrumb}}
+  {{>partials/breadcrumb}}
+  {{/_disableBreadcrumb}}
+  
+  <div class="row">
+    <div class="col-12">
+      <article class="content wrap" id="_content" data-uid="{{uid}}">
+        {{#conceptual}}
+        {{{conceptual}}}
+        {{/conceptual}}
+        {{^conceptual}}
+        {{{rawTitle}}}
+        {{/conceptual}}
+      </article>
+    </div>
+  </div>
+</div>
+
+{{^_disableFooter}}
+{{>partials/footer}}
+{{/_disableFooter}}
+
+{{#_enableSearch}}
+<div id="mask" class="mask"></div>
+<div id="overlay" class="overlay">
+  <div id="search-results" class="search-results">
+    <div class="search-list"></div>
+    <div class="sr-items"></div>
+  </div>
+</div>
+{{/_enableSearch}}
+
+{{>partials/scripts}}

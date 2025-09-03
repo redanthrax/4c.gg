@@ -1,4 +1,6 @@
-- name: Docs
-  href: docs/
-- name: API
-  href: api/
+- name: Home
+  href: index.md
+- name: Projects
+  href: projects/
+- name: Blog
+  href: blog/

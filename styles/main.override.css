@@ -1,0 +1,85 @@
+/* Additional overrides for DocFX elements */
+
+/* Hide more DocFX specific elements */
+.contribution-panel,
+.improve-docs,
+.feedback,
+.contribute-link,
+.edit-link,
+[data-uid="conceptual"],
+.btn.btn-xs.btn-link,
+.dropdown-item {
+  display: none !important;
+}
+
+/* Custom styling for TOC */
+.sidefilter {
+  background-color: var(--bg-secondary);
+  border: none;
+}
+
+.toc {
+  background-color: var(--bg-secondary);
+}
+
+.toc .nav > li > a {
+  color: var(--text-secondary);
+  background-color: transparent;
+}
+
+.toc .nav > li > a:hover {
+  color: var(--accent-primary);
+  background-color: var(--bg-tertiary);
+}
+
+.toc .nav > li.active > a {
+  color: var(--accent-primary);
+  background-color: var(--bg-tertiary);
+}
+
+/* Search box styling */
+#search-results {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  color: var(--text-primary);
+}
+
+.search-list .search-item {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.search-list .search-item:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* Override Bootstrap default styles */
+.btn {
+  border-radius: 6px;
+}
+
+/* Hide unnecessary elements */
+.affix,
+.mobile-hide,
+.contribution ul,
+.alert {
+  display: none !important;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

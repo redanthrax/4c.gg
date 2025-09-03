@@ -1,0 +1,21 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{_rel}}{{{_appLogoPath}}}{{^_appLogoPath}}{{_rel}}index.html{{/_appLogoPath}}">
+      {{#_appName}}{{_appName}}{{/_appName}}{{^_appName}}4c.gg{{/_appName}}
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        {{#_globalToc}}
+        {{>partials/li}}
+        {{/_globalToc}}
+      </ul>
+    </div>
+  </div>
+</nav>
