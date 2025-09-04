@@ -281,10 +281,14 @@ This Grafana dashboard provides comprehensive monitoring and analytics for agent
 
 If you prefer to skip the manual setup above, you can import the pre-configured dashboard:
 
+### Download the Dashboard JSON
+
+**[Download agentdashboard.json](https://raw.githubusercontent.com/redanthrax/halopsa/master/grafana/dashboards/Agent%20Dashboard/agentdashboard.json)** from the live repository.
+
 1. **Import the Dashboard**:
    - Navigate to **+ > Import** in Grafana
-   - Click **Upload JSON file** and select `agentdashboard.json`
-   - OR copy the contents of `agentdashboard.json` and paste into the text area
+   - Click **Upload JSON file** and select the downloaded `agentdashboard.json`
+   - OR copy the contents from the GitHub link above and paste into the text area
    - Click **Load**
 
 2. **Configure Import Settings**:
