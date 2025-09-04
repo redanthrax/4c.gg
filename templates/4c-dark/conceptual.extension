@@ -1,0 +1,21 @@
+.extension{
+  .template{
+    .primary
+    <div class="projects-auto-list">
+    {{#tocItems}}
+      {{#items}}
+        {{#href}}
+        <div class="project-item">
+          <h3><a href="{{href}}">{{name}}</a></h3>
+          {{#metadata}}
+            {{#description}}<p><em>{{description}}</em></p>{{/description}}
+            {{#tech_stack}}<p><strong>Tech Stack:</strong> {{tech_stack}}</p>{{/tech_stack}}
+            {{#status}}<p><strong>Status:</strong> {{status}}</p>{{/status}}
+          {{/metadata}}
+        </div>
+        {{/href}}
+      {{/items}}
+    {{/tocItems}}
+    </div>
+  }
+}

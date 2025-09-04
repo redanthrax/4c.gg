@@ -1,10 +1,14 @@
 - name: Overview
   href: index.md
-- name: Web Applications
-  href: web-apps/
-- name: Tools & Utilities
-  href: tools/
-- name: Libraries
-  href: libraries/
-- name: Experiments
-  href: experiments/
+- name: CIPP
+  href: cipp.md
+- name: TacticalRMM
+  href: tacticalrmm.md
+- name: Community Scripts
+  href: community-scripts.md
+- name: AutomateBitlockerPlugin
+  href: automate-bitlocker-plugin.md
+- name: Azure Automation
+  href: azure-automation.md
+- name: ConnectWise Automate
+  href: connectwise-automate.md

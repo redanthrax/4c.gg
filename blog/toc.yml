@@ -1,14 +1,54 @@
-- name: Recent Posts
+- name: Overview
   href: index.md
-- name: 2024 Posts
-  href: 2024/
 - name: Categories
   items:
-    - name: Tutorials
-      href: categories/tutorials/
-    - name: Development
-      href: categories/development/
-    - name: Technology
-      href: categories/technology/
-    - name: Personal
-      href: categories/personal/
+    - name: MSP & RMM Tools
+      items:
+        - name: TacticalRMM with n8n
+          href: 2023/using-tacticalrmm-to-generate-a-software-list-with-n8n.md
+        - name: RMM PowerShell Building
+          href: 2023/rmm-powershell-script-building.md
+    - name: PowerShell & Automation
+      items:
+        - name: RMM PowerShell Building
+          href: 2023/rmm-powershell-script-building.md
+        - name: Windows Update PowerShell
+          href: 2022/windows-update-powershell-tricks.md
+        - name: PowerShell Template
+          href: 2022/powershell-script-template.md
+    - name: Azure & Cloud
+      items:
+        - name: Azure Auth Portnox
+          href: 2022/azure-auth-portnox-radius-service-with-duo-push.md
+        - name: Azure Filebeat Syslog
+          href: 2022/setting-up-azure-hosted-filebeat-syslog-relay-with-vpn.md
+    - name: Linux & System Administration
+      items:
+        - name: Arch Linux on Razer
+          href: 2022/installing-arch-linux-on-razer-laptop.md
+    - name: Personal & Blog
+      items:
+        - name: New Start
+          href: 2022/new-start.md
+- name: 2023 Posts
+  href: 2023/index.md
+  items:
+    - name: TacticalRMM with n8n
+      href: 2023/using-tacticalrmm-to-generate-a-software-list-with-n8n.md
+    - name: RMM PowerShell Building
+      href: 2023/rmm-powershell-script-building.md
+- name: 2022 Posts
+  href: 2022/index.md
+  items:
+    - name: Azure Auth Portnox
+      href: 2022/azure-auth-portnox-radius-service-with-duo-push.md
+    - name: Arch Linux on Razer
+      href: 2022/installing-arch-linux-on-razer-laptop.md
+    - name: Windows Update PowerShell
+      href: 2022/windows-update-powershell-tricks.md
+    - name: Azure Filebeat Syslog
+      href: 2022/setting-up-azure-hosted-filebeat-syslog-relay-with-vpn.md
+    - name: PowerShell Template
+      href: 2022/powershell-script-template.md
+    - name: New Start
+      href: 2022/new-start.md
