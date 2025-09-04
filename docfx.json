@@ -20,7 +20,8 @@
           "images/**",
           "styles/**",
           "public/**",
-          "main.css"
+          "main.css",
+          "halopsa/**/*.{png,jpg,jpeg,gif}"
         ]
       }
     ],

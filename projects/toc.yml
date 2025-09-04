@@ -8,7 +8,5 @@
   href: community-scripts.md
 - name: AutomateBitlockerPlugin
   href: automate-bitlocker-plugin.md
-- name: Azure Automation
-  href: azure-automation.md
-- name: ConnectWise Automate
-  href: connectwise-automate.md
+- name: HaloPSA
+  href: halopsa.md

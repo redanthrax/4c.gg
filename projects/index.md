@@ -48,25 +48,14 @@ AutomateBitlockerPlugin is a comprehensive C# plugin for ConnectWise Automate th
 
 ---
 
-### [Azure Automation](azure-automation.md)
-*Bicep templates and PowerShell automation for Azure infrastructure - 1 star*
+### [HaloPSA](halopsa.md)
+*Repository to store all my HaloPSA goodies - Tips, tricks, and MSP utilities*
 
-**Tech Stack:** Bicep, PowerShell, Azure CLI, ARM Templates | **Status:** Active | **Category:** Azure & Cloud
+**Tech Stack:** PowerShell, SQL, Grafana, HaloPSA API | **Status:** Active | **Category:** MSP & RMM Tools
 
-Azure Automation is my comprehensive collection of Infrastructure as Code (IaC) solutions using Bicep templates and PowerShell automation for Azure deployments. This repository demonstrates modern cloud infrastructure management practices and automated deployment workflows.
+This is my special repository for all things HaloPSA, serving as a comprehensive collection of resources for MSP professionals. It contains practical tips, tricks, Grafana dashboards, custom SQL queries, and API integrations that enhance the HaloPSA experience in real-world MSP environments.
 
-**Links:** [Repository](https://github.com/redanthrax/azure-automation)
-
----
-
-### [ConnectWise Automate](connectwise-automate.md)
-*MSP automation tools and scripts for ConnectWise Automate - 3 stars*
-
-**Tech Stack:** PowerShell, SQL, ConnectWise API, Automation | **Status:** Active Contributor | **Category:** MSP & RMM Tools
-
-ConnectWise Automate contributions represent my extensive work in MSP automation, including custom scripts, plugins, and tools designed to enhance the ConnectWise Automate RMM platform. This collection demonstrates deep expertise in MSP operations and automation workflows.
-
-**Links:** [Repository](https://github.com/redanthrax/connectwise-automate)
+**Links:** [Repository](https://github.com/redanthrax/halopsa) | [Grafana Documentation](https://github.com/redanthrax/halopsa/tree/master/grafana) | [SQL Queries](https://github.com/redanthrax/halopsa/tree/master/queries)
 
 ---
 
@@ -80,13 +69,10 @@ All project details are available in the navigation menu to the left.
 - **CIPP** - Microsoft 365 multitenant management (968 ⭐, 6,040 🍴)
 - **TacticalRMM** - Open-source RMM platform
 - **AutomateBitlockerPlugin** - BitLocker management for ConnectWise (1 ⭐, 5 🍴)
-- **ConnectWise Automate** - MSP automation scripts (3 ⭐)
+- **HaloPSA** - Tips, tricks, and utilities for HaloPSA
 
 ### PowerShell Scripts
 - **Community Scripts** - Automation scripts for IT operations (3 ⭐, 1 🍴)
-
-### Azure & Cloud
-- **Azure Automation** - Infrastructure as Code with Bicep (1 ⭐)
 
 ## How to Contribute
 
